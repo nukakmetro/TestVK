@@ -35,13 +35,22 @@ private extension ReviewsViewController {
         let reviewsView = ReviewsView()
         reviewsView.tableView.delegate = viewModel
         reviewsView.tableView.dataSource = viewModel
+        reviewsView.tableView.refreshControl = UIRefreshControl()
+        reviewsView.tableView.refreshControl?.addTarget(self, action: #selector(didPullToRefresh), for: .valueChanged)
         return reviewsView
     }
 
     func setupViewModel() {
         viewModel.onStateChange = { [weak reviewsView] _ in
+            reviewsView?.loadingView?.removeFromSuperview()
+            reviewsView?.loadingView = nil
+            reviewsView?.tableView.refreshControl?.endRefreshing()
             reviewsView?.tableView.reloadData()
         }
     }
 
+    /// Метод обработки refreshControl TableView
+    @objc private func didPullToRefresh() {
+        viewModel.refreshReviews()
+    }
 }

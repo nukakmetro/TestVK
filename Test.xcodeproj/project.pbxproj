@@ -27,6 +27,9 @@
 		21ED1F602D69C85E0012D6F6 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ED1F5F2D69C85E0012D6F6 /* RootViewController.swift */; };
 		21ED1F622D69CBCD0012D6F6 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ED1F612D69CBCD0012D6F6 /* RootView.swift */; };
 		21ED1F652D69D0340012D6F6 /* ReviewsScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ED1F642D69D0340012D6F6 /* ReviewsScreenFactory.swift */; };
+		7835C28A2D73483C00BB3648 /* ImagesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7835C2892D73483C00BB3648 /* ImagesLoader.swift */; };
+		7835C28C2D736A8D00BB3648 /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7835C28B2D736A8D00BB3648 /* LoadingIndicatorView.swift */; };
+		78E327F12D7219C000C546BA /* ReviewFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E327F02D7219C000C546BA /* ReviewFooterCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +54,9 @@
 		21ED1F5F2D69C85E0012D6F6 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		21ED1F612D69CBCD0012D6F6 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		21ED1F642D69D0340012D6F6 /* ReviewsScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsScreenFactory.swift; sourceTree = "<group>"; };
+		7835C2892D73483C00BB3648 /* ImagesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesLoader.swift; sourceTree = "<group>"; };
+		7835C28B2D736A8D00BB3648 /* LoadingIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorView.swift; sourceTree = "<group>"; };
+		78E327F02D7219C000C546BA /* ReviewFooterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewFooterCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				21B82E252D47B0640085DAA2 /* ReviewCell.swift */,
+				78E327F02D7219C000C546BA /* ReviewFooterCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -149,6 +156,7 @@
 		21B82E372D47B1090085DAA2 /* Reviews */ = {
 			isa = PBXGroup;
 			children = (
+				7835C2892D73483C00BB3648 /* ImagesLoader.swift */,
 				21ED1F642D69D0340012D6F6 /* ReviewsScreenFactory.swift */,
 				21B82E292D47B0640085DAA2 /* ReviewsViewController.swift */,
 				2166A0F32D4A5B25009AAA76 /* ReviewsView.swift */,
@@ -157,6 +165,7 @@
 				21B82E352D47B0D80085DAA2 /* ReviewsProvider.swift */,
 				21667B7F2D4A25B2009AAA76 /* RatingRenderer.swift */,
 				216668752D48F39E009AAA76 /* Cells */,
+				7835C28B2D736A8D00BB3648 /* LoadingIndicatorView.swift */,
 			);
 			path = Reviews;
 			sourceTree = "<group>";
@@ -266,6 +275,7 @@
 				21ED1F622D69CBCD0012D6F6 /* RootView.swift in Sources */,
 				21667B802D4A25B2009AAA76 /* RatingRenderer.swift in Sources */,
 				216668712D48E4B2009AAA76 /* NSAttributedString+Ext.swift in Sources */,
+				7835C28A2D73483C00BB3648 /* ImagesLoader.swift in Sources */,
 				21B82E362D47B0D80085DAA2 /* ReviewsProvider.swift in Sources */,
 				21ED1F602D69C85E0012D6F6 /* RootViewController.swift in Sources */,
 				21B82E342D47B0AA0085DAA2 /* ReviewsViewModel.swift in Sources */,
@@ -273,8 +283,10 @@
 				21B82E302D47B0640085DAA2 /* ReviewsViewController.swift in Sources */,
 				2166A0F42D4A5B25009AAA76 /* ReviewsView.swift in Sources */,
 				216668732D48E89A009AAA76 /* Colors.swift in Sources */,
+				7835C28C2D736A8D00BB3648 /* LoadingIndicatorView.swift in Sources */,
 				21B841712D47C5F00085DAA2 /* TableCellConfig.swift in Sources */,
 				21ED1F652D69D0340012D6F6 /* ReviewsScreenFactory.swift in Sources */,
+				78E327F12D7219C000C546BA /* ReviewFooterCell.swift in Sources */,
 				2166686F2D48E23F009AAA76 /* Fonts.swift in Sources */,
 				21B82E312D47B0640085DAA2 /* AppDelegate.swift in Sources */,
 				21B8416F2D47C4C60085DAA2 /* String+Ext.swift in Sources */,
